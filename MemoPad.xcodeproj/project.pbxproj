@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01373C061E6667CB00574A47 /* MPSketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01373C051E6667CB00574A47 /* MPSketchView.swift */; };
+		01373C0B1E66790800574A47 /* MPSketchShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01373C0A1E66790800574A47 /* MPSketchShapeLayer.swift */; };
+		01373C0D1E667DAA00574A47 /* MPBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01373C0C1E667DAA00574A47 /* MPBezierPath.swift */; };
+		014F74DB1E67677100B2629B /* MPSketchView+TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74DA1E67677100B2629B /* MPSketchView+TouchEvent.swift */; };
+		014F74DF1E67686C00B2629B /* MPSketchView+Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74DE1E67686C00B2629B /* MPSketchView+Layers.swift */; };
+		014F74E11E688AAE00B2629B /* MPSketchTopShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74E01E688AAE00B2629B /* MPSketchTopShapeLayer.swift */; };
+		014F74E31E6B494300B2629B /* MPSketchView+History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74E21E6B494300B2629B /* MPSketchView+History.swift */; };
+		014F74E51E6B4B4800B2629B /* MPOperationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74E41E6B4B4800B2629B /* MPOperationBarView.swift */; };
+		014F74E71E6B64FB00B2629B /* MPDraggableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74E61E6B64FB00B2629B /* MPDraggableTextView.swift */; };
+		014F752B1E6E41C000B2629B /* MPTopConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F752A1E6E41C000B2629B /* MPTopConfirmView.swift */; };
+		014F752D1E6F03FC00B2629B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F752C1E6F03FB00B2629B /* UIColor+RGB.swift */; };
+		01820D021E5BE20C004F7CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D011E5BE20C004F7CC6 /* AppDelegate.swift */; };
+		01820D041E5BE20C004F7CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D031E5BE20C004F7CC6 /* ViewController.swift */; };
+		01820D071E5BE20C004F7CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01820D051E5BE20C004F7CC6 /* Main.storyboard */; };
+		01820D091E5BE20C004F7CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01820D081E5BE20C004F7CC6 /* Assets.xcassets */; };
+		01820D0C1E5BE20C004F7CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01820D0A1E5BE20C004F7CC6 /* LaunchScreen.storyboard */; };
+		01820D171E5BE531004F7CC6 /* MPColorPlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D161E5BE531004F7CC6 /* MPColorPlateView.swift */; };
+		01820D191E5BEA09004F7CC6 /* MPColorPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D181E5BEA09004F7CC6 /* MPColorPanelView.swift */; };
+		01820D1B1E5BFDBF004F7CC6 /* MPToolDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D1A1E5BFDBF004F7CC6 /* MPToolDeckView.swift */; };
+		01ECA7301E6FA40D00D09FE6 /* MPToolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECA72F1E6FA40D00D09FE6 /* MPToolListView.swift */; };
+		01ECA7321E7497AB00D09FE6 /* MPColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECA7311E7497AB00D09FE6 /* MPColorPickerView.swift */; };
+		01ECA7341E74D5A700D09FE6 /* MPColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECA7331E74D5A700D09FE6 /* MPColorPicker.swift */; };
+		01ECA7381E74DFC600D09FE6 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECA7371E74DFC600D09FE6 /* FileHelper.swift */; };
+		01ECA73A1E74E19600D09FE6 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01ECA7391E74E19600D09FE6 /* Colors.plist */; };
+		01ECA73D1E74E51600D09FE6 /* String+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECA73C1E74E51600D09FE6 /* String+Path.swift */; };
+		01ECA73F1E74E5F600D09FE6 /* ColorsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECA73E1E74E5F600D09FE6 /* ColorsManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01373C051E6667CB00574A47 /* MPSketchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPSketchView.swift; sourceTree = "<group>"; };
+		01373C0A1E66790800574A47 /* MPSketchShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPSketchShapeLayer.swift; sourceTree = "<group>"; };
+		01373C0C1E667DAA00574A47 /* MPBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPBezierPath.swift; sourceTree = "<group>"; };
+		014F74DA1E67677100B2629B /* MPSketchView+TouchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSketchView+TouchEvent.swift"; sourceTree = "<group>"; };
+		014F74DE1E67686C00B2629B /* MPSketchView+Layers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSketchView+Layers.swift"; sourceTree = "<group>"; };
+		014F74E01E688AAE00B2629B /* MPSketchTopShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPSketchTopShapeLayer.swift; sourceTree = "<group>"; };
+		014F74E21E6B494300B2629B /* MPSketchView+History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPSketchView+History.swift"; sourceTree = "<group>"; };
+		014F74E41E6B4B4800B2629B /* MPOperationBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPOperationBarView.swift; sourceTree = "<group>"; };
+		014F74E61E6B64FB00B2629B /* MPDraggableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDraggableTextView.swift; sourceTree = "<group>"; };
+		014F752A1E6E41C000B2629B /* MPTopConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPTopConfirmView.swift; sourceTree = "<group>"; };
+		014F752C1E6F03FB00B2629B /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		01820CFE1E5BE20C004F7CC6 /* MemoPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01820D011E5BE20C004F7CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01820D031E5BE20C004F7CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		01820D061E5BE20C004F7CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01820D081E5BE20C004F7CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01820D0B1E5BE20C004F7CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01820D0D1E5BE20C004F7CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01820D161E5BE531004F7CC6 /* MPColorPlateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPColorPlateView.swift; sourceTree = "<group>"; };
+		01820D181E5BEA09004F7CC6 /* MPColorPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPColorPanelView.swift; sourceTree = "<group>"; };
+		01820D1A1E5BFDBF004F7CC6 /* MPToolDeckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPToolDeckView.swift; sourceTree = "<group>"; };
+		01ECA72F1E6FA40D00D09FE6 /* MPToolListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPToolListView.swift; sourceTree = "<group>"; };
+		01ECA7311E7497AB00D09FE6 /* MPColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPColorPickerView.swift; sourceTree = "<group>"; };
+		01ECA7331E74D5A700D09FE6 /* MPColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPColorPicker.swift; sourceTree = "<group>"; };
+		01ECA7371E74DFC600D09FE6 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		01ECA7391E74E19600D09FE6 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
+		01ECA73C1E74E51600D09FE6 /* String+Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Path.swift"; sourceTree = "<group>"; };
+		01ECA73E1E74E5F600D09FE6 /* ColorsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01820CFB1E5BE20C004F7CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01373C071E66772B00574A47 /* MPSketchView */ = {
+			isa = PBXGroup;
+			children = (
+				01373C091E66783100574A47 /* Layers */,
+				01373C081E66774400574A47 /* Extensions */,
+				01373C051E6667CB00574A47 /* MPSketchView.swift */,
+			);
+			name = MPSketchView;
+			sourceTree = "<group>";
+		};
+		01373C081E66774400574A47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				014F74DA1E67677100B2629B /* MPSketchView+TouchEvent.swift */,
+				014F74DE1E67686C00B2629B /* MPSketchView+Layers.swift */,
+				014F74E21E6B494300B2629B /* MPSketchView+History.swift */,
+				014F752C1E6F03FB00B2629B /* UIColor+RGB.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		01373C091E66783100574A47 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				01373C0A1E66790800574A47 /* MPSketchShapeLayer.swift */,
+				014F74E01E688AAE00B2629B /* MPSketchTopShapeLayer.swift */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		01820CF51E5BE20C004F7CC6 = {
+			isa = PBXGroup;
+			children = (
+				01820D001E5BE20C004F7CC6 /* MemoPad */,
+				01820CFF1E5BE20C004F7CC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01820CFF1E5BE20C004F7CC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01820CFE1E5BE20C004F7CC6 /* MemoPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01820D001E5BE20C004F7CC6 /* MemoPad */ = {
+			isa = PBXGroup;
+			children = (
+				01ECA73B1E74E4F300D09FE6 /* Extensions */,
+				01ECA7361E74DF9D00D09FE6 /* Helpers */,
+				01820D131E5BE509004F7CC6 /* Controllers */,
+				01820D141E5BE509004F7CC6 /* Models */,
+				01820D151E5BE509004F7CC6 /* Views */,
+				01820D011E5BE20C004F7CC6 /* AppDelegate.swift */,
+				01820D051E5BE20C004F7CC6 /* Main.storyboard */,
+				01820D081E5BE20C004F7CC6 /* Assets.xcassets */,
+				01820D0A1E5BE20C004F7CC6 /* LaunchScreen.storyboard */,
+				01820D0D1E5BE20C004F7CC6 /* Info.plist */,
+				01ECA7391E74E19600D09FE6 /* Colors.plist */,
+				01ECA73E1E74E5F600D09FE6 /* ColorsManager.swift */,
+			);
+			path = MemoPad;
+			sourceTree = "<group>";
+		};
+		01820D131E5BE509004F7CC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				01820D031E5BE20C004F7CC6 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		01820D141E5BE509004F7CC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01373C0C1E667DAA00574A47 /* MPBezierPath.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01820D151E5BE509004F7CC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01373C071E66772B00574A47 /* MPSketchView */,
+				01820D161E5BE531004F7CC6 /* MPColorPlateView.swift */,
+				01820D181E5BEA09004F7CC6 /* MPColorPanelView.swift */,
+				01820D1A1E5BFDBF004F7CC6 /* MPToolDeckView.swift */,
+				014F74E41E6B4B4800B2629B /* MPOperationBarView.swift */,
+				014F74E61E6B64FB00B2629B /* MPDraggableTextView.swift */,
+				014F752A1E6E41C000B2629B /* MPTopConfirmView.swift */,
+				01ECA72F1E6FA40D00D09FE6 /* MPToolListView.swift */,
+				01ECA7311E7497AB00D09FE6 /* MPColorPickerView.swift */,
+				01ECA7331E74D5A700D09FE6 /* MPColorPicker.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		01ECA7361E74DF9D00D09FE6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				01ECA7371E74DFC600D09FE6 /* FileHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		01ECA73B1E74E4F300D09FE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				01ECA73C1E74E51600D09FE6 /* String+Path.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01820CFD1E5BE20C004F7CC6 /* MemoPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01820D101E5BE20C004F7CC6 /* Build configuration list for PBXNativeTarget "MemoPad" */;
+			buildPhases = (
+				01820CFA1E5BE20C004F7CC6 /* Sources */,
+				01820CFB1E5BE20C004F7CC6 /* Frameworks */,
+				01820CFC1E5BE20C004F7CC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoPad;
+			productName = MemoPad;
+			productReference = 01820CFE1E5BE20C004F7CC6 /* MemoPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01820CF61E5BE20C004F7CC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = nick.shi;
+				TargetAttributes = {
+					01820CFD1E5BE20C004F7CC6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JV4K4AEVUU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01820CF91E5BE20C004F7CC6 /* Build configuration list for PBXProject "MemoPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01820CF51E5BE20C004F7CC6;
+			productRefGroup = 01820CFF1E5BE20C004F7CC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01820CFD1E5BE20C004F7CC6 /* MemoPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01820CFC1E5BE20C004F7CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01ECA73A1E74E19600D09FE6 /* Colors.plist in Resources */,
+				01820D0C1E5BE20C004F7CC6 /* LaunchScreen.storyboard in Resources */,
+				01820D091E5BE20C004F7CC6 /* Assets.xcassets in Resources */,
+				01820D071E5BE20C004F7CC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01820CFA1E5BE20C004F7CC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014F74E31E6B494300B2629B /* MPSketchView+History.swift in Sources */,
+				01ECA7321E7497AB00D09FE6 /* MPColorPickerView.swift in Sources */,
+				01373C0D1E667DAA00574A47 /* MPBezierPath.swift in Sources */,
+				014F74DB1E67677100B2629B /* MPSketchView+TouchEvent.swift in Sources */,
+				01820D041E5BE20C004F7CC6 /* ViewController.swift in Sources */,
+				014F74E51E6B4B4800B2629B /* MPOperationBarView.swift in Sources */,
+				014F752B1E6E41C000B2629B /* MPTopConfirmView.swift in Sources */,
+				01373C061E6667CB00574A47 /* MPSketchView.swift in Sources */,
+				01ECA7341E74D5A700D09FE6 /* MPColorPicker.swift in Sources */,
+				01ECA73F1E74E5F600D09FE6 /* ColorsManager.swift in Sources */,
+				01820D1B1E5BFDBF004F7CC6 /* MPToolDeckView.swift in Sources */,
+				014F74E11E688AAE00B2629B /* MPSketchTopShapeLayer.swift in Sources */,
+				01820D191E5BEA09004F7CC6 /* MPColorPanelView.swift in Sources */,
+				01820D021E5BE20C004F7CC6 /* AppDelegate.swift in Sources */,
+				01373C0B1E66790800574A47 /* MPSketchShapeLayer.swift in Sources */,
+				014F74E71E6B64FB00B2629B /* MPDraggableTextView.swift in Sources */,
+				01820D171E5BE531004F7CC6 /* MPColorPlateView.swift in Sources */,
+				014F74DF1E67686C00B2629B /* MPSketchView+Layers.swift in Sources */,
+				01ECA73D1E74E51600D09FE6 /* String+Path.swift in Sources */,
+				01ECA7301E6FA40D00D09FE6 /* MPToolListView.swift in Sources */,
+				014F752D1E6F03FC00B2629B /* UIColor+RGB.swift in Sources */,
+				01ECA7381E74DFC600D09FE6 /* FileHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01820D051E5BE20C004F7CC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01820D061E5BE20C004F7CC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01820D0A1E5BE20C004F7CC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01820D0B1E5BE20C004F7CC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01820D0E1E5BE20C004F7CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01820D0F1E5BE20C004F7CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01820D111E5BE20C004F7CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JV4K4AEVUU;
+				INFOPLIST_FILE = MemoPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.MemoPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		01820D121E5BE20C004F7CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JV4K4AEVUU;
+				INFOPLIST_FILE = MemoPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.MemoPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01820CF91E5BE20C004F7CC6 /* Build configuration list for PBXProject "MemoPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01820D0E1E5BE20C004F7CC6 /* Debug */,
+				01820D0F1E5BE20C004F7CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01820D101E5BE20C004F7CC6 /* Build configuration list for PBXNativeTarget "MemoPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01820D111E5BE20C004F7CC6 /* Debug */,
+				01820D121E5BE20C004F7CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01820CF61E5BE20C004F7CC6 /* Project object */;
+}
