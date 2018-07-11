@@ -7,7 +7,7 @@
 //
 
 import UIKit
-protocol MPDraggableTextViewDelegate {
+protocol MPDraggableTextViewDelegate : class {
     func draggableTextViewDidEndEditing(_ textView: MPDraggableTextView);
     func draggableTextViewDidBeginEditing(_ textView: MPDraggableTextView);
 }
@@ -17,7 +17,7 @@ class MPDraggableTextView: UIView, UITextViewDelegate {
     var textView: UITextView!;
     var chulkView: UIView!;
     
-    var delegate: MPDraggableTextViewDelegate?;
+    weak var delegate: MPDraggableTextViewDelegate?;
     
     public var textColor: UIColor = UIColor.black {
         didSet {

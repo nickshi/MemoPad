@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPOperationBarViewDelegate {
+protocol MPOperationBarViewDelegate : class{
     func operationBarView(operationBarView: MPOperationBarView, undo:Bool);
     func operationBarView(operationBarView: MPOperationBarView, redo:Bool);
     func operationBarView(operationBarView: MPOperationBarView, share:Bool);
@@ -23,7 +23,7 @@ class MPOperationBarView: UIView {
     }
     */
     
-    var delegate: MPOperationBarViewDelegate?;
+    weak var delegate: MPOperationBarViewDelegate?;
     var btnUndo: UIButton!;
     var btnRedo: UIButton!;
     var btnShare: UIButton!;

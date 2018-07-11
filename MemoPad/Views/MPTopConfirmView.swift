@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPTopConfirmViewDelegate {
+protocol MPTopConfirmViewDelegate : class {
     func topConfirmViewOK(_ topConfirmView: MPTopConfirmView);
     func topConfirmViewCancel(_ topConfirmView: MPTopConfirmView);
 }
@@ -25,7 +25,7 @@ class MPTopConfirmView: UIView {
     var btnCancel: UIButton!;
     var btnOK: UIButton!;
     
-    var delegate: MPTopConfirmViewDelegate?;
+    weak var delegate: MPTopConfirmViewDelegate?;
     
     override init(frame: CGRect) {
         super.init(frame: frame);

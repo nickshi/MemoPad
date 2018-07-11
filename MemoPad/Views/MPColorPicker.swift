@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPColorPickerDelegate {
+protocol MPColorPickerDelegate : class {
     func colorPickerOk(_ colorPicker: MPColorPicker, selectedColor: UIColor);
     func colorPickerCancel(_ colorPicker: MPColorPicker);
 }
@@ -21,7 +21,7 @@ class MPColorPicker: UIView, MPColorPickerViewDelegate {
         // Drawing code
     }
     */
-    var delegate: MPColorPickerDelegate?;
+    weak var delegate: MPColorPickerDelegate?;
     var chooseColorView: UIView!;
     var colorPickerView: MPColorPickerView!;
 

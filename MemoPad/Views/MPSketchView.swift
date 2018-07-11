@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPSketchViewDelegate {
+protocol MPSketchViewDelegate : class {
     func sketchViewUpdateUndoRedoState(_ sketchView: MPSketchView);
 }
 
@@ -32,7 +32,7 @@ class MPSketchView: UIView {
     }
     */
     
-    var delegate: MPSketchViewDelegate?;
+    weak var delegate: MPSketchViewDelegate?;
     
 
     

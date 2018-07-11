@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPToolDeckViewDelegate {
+protocol MPToolDeckViewDelegate : class{
     func toolDeckView(_ tooldeckview: MPToolDeckView, selectedLineWidth width:Int);
     func toolDeckView(_ tooldeckview: MPToolDeckView, didSelectEarser eraser:Bool);
     func toolDeckView(_ tooldeckview: MPToolDeckView, currentTool pen:Tools);
@@ -25,7 +25,7 @@ class MPToolDeckView: UIView {
     }
     */
     
-    var delegate: MPToolDeckViewDelegate?;
+    weak var delegate: MPToolDeckViewDelegate?;
     //lineWidth
     var btnLineWidth1: UIButton!;
     var btnLineWidth2: UIButton!;

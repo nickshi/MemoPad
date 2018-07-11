@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPColorPickerViewDelegate {
+protocol MPColorPickerViewDelegate : class {
     func colorPickerView(_ colorPickerView: MPColorPickerView, selectedColor color: UIColor);
 }
 
@@ -21,7 +21,7 @@ class MPColorPickerView: UIView {
         // Drawing code
     }
     */
-    var delegate: MPColorPickerViewDelegate?;
+    weak var delegate: MPColorPickerViewDelegate?;
     var circleView: UIView!;
     
     var lastLocation: CGPoint = CGPoint.zero;

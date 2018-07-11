@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPToolListViewDelegate {
+protocol MPToolListViewDelegate : class {
     func toolListView(_ toolListView: MPToolListView, didPenSelected pen: Bool);
     func toolListView(_ toolListView: MPToolListView, didTextSelected text: Bool);
 }
@@ -24,7 +24,7 @@ class MPToolListView: UIView {
     var btnBrush: UIButton!;
     var btnText: UIButton!;
     var collectionView: UICollectionView?;
-    var delegate: MPToolListViewDelegate?
+    weak var delegate: MPToolListViewDelegate?
     override init(frame: CGRect) {
         super.init(frame: frame);
         self.backgroundColor = UIColor.white;

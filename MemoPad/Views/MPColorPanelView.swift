@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol MPColorPanelViewDelegate {
+protocol MPColorPanelViewDelegate : class {
     func colorPanel (_ colorPanel:MPColorPanelView,  _ selectedColor : UIColor);
     func addNewColor (_ colorPanel:MPColorPanelView);
 }
@@ -22,7 +22,7 @@ class MPColorPanelView: UIView, UICollectionViewDelegate, UICollectionViewDataSo
         // Drawing code
     }
     */
-    var delegate: MPColorPanelViewDelegate?;
+    weak var delegate: MPColorPanelViewDelegate?;
     
     var collectionView: UICollectionView!;
     var colorsAry: [UIColor] = [UIColor]();
