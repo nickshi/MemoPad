@@ -18,8 +18,8 @@
 		014F74E71E6B64FB00B2629B /* MPDraggableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F74E61E6B64FB00B2629B /* MPDraggableTextView.swift */; };
 		014F752B1E6E41C000B2629B /* MPTopConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F752A1E6E41C000B2629B /* MPTopConfirmView.swift */; };
 		014F752D1E6F03FC00B2629B /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014F752C1E6F03FB00B2629B /* UIColor+RGB.swift */; };
+		0161806520F6C4F6007BBCF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0161806420F6C4F6007BBCF8 /* ViewController.swift */; };
 		01820D021E5BE20C004F7CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D011E5BE20C004F7CC6 /* AppDelegate.swift */; };
-		01820D041E5BE20C004F7CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01820D031E5BE20C004F7CC6 /* ViewController.swift */; };
 		01820D071E5BE20C004F7CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01820D051E5BE20C004F7CC6 /* Main.storyboard */; };
 		01820D091E5BE20C004F7CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01820D081E5BE20C004F7CC6 /* Assets.xcassets */; };
 		01820D0C1E5BE20C004F7CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01820D0A1E5BE20C004F7CC6 /* LaunchScreen.storyboard */; };
@@ -47,9 +47,9 @@
 		014F74E61E6B64FB00B2629B /* MPDraggableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDraggableTextView.swift; sourceTree = "<group>"; };
 		014F752A1E6E41C000B2629B /* MPTopConfirmView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPTopConfirmView.swift; sourceTree = "<group>"; };
 		014F752C1E6F03FB00B2629B /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		0161806420F6C4F6007BBCF8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01820CFE1E5BE20C004F7CC6 /* MemoPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01820D011E5BE20C004F7CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01820D031E5BE20C004F7CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		01820D061E5BE20C004F7CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01820D081E5BE20C004F7CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01820D0B1E5BE20C004F7CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		01820D131E5BE509004F7CC6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				01820D031E5BE20C004F7CC6 /* ViewController.swift */,
+				0161806420F6C4F6007BBCF8 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				01ECA7321E7497AB00D09FE6 /* MPColorPickerView.swift in Sources */,
 				01373C0D1E667DAA00574A47 /* MPBezierPath.swift in Sources */,
 				014F74DB1E67677100B2629B /* MPSketchView+TouchEvent.swift in Sources */,
-				01820D041E5BE20C004F7CC6 /* ViewController.swift in Sources */,
+				0161806520F6C4F6007BBCF8 /* ViewController.swift in Sources */,
 				014F74E51E6B4B4800B2629B /* MPOperationBarView.swift in Sources */,
 				014F752B1E6E41C000B2629B /* MPTopConfirmView.swift in Sources */,
 				01373C061E6667CB00574A47 /* MPSketchView.swift in Sources */,

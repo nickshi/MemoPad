@@ -76,7 +76,7 @@ class MPColorPickerView: UIView {
             lastLocation = circleView.center;
         } else if (gesture.state == .changed) {
             let moveXY = gesture.translation(in: self);
-            var point = CGPoint(x: lastLocation.x + moveXY.x, y: lastLocation.y + moveXY.y);
+            let point = CGPoint(x: lastLocation.x + moveXY.x, y: lastLocation.y + moveXY.y);
             self.currentPoint = point;
         }
     }
